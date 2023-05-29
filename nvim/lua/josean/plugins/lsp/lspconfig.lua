@@ -95,7 +95,7 @@ lspconfig.rust_analyzer.setup({
   },
 })
 
-require("cmp").setup({
+cmp_nvim_lsp.setup({
   snippet = {
     expand = function(args)
       vim.fn["vsnip#anonymous"](args.body)
